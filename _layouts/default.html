@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body>
+    
+    {% include nav.html %}
+
+    <!-- Main site container -->
+    <div class="container">
+
+      <a class="anchor" name="top-of-page"></a>
+
+      {{ content }}
+
+    </div> <!-- container -->
+
+    {% asset main.js %}
+    {% include footer.html %}
+
+  </body>
+
+</html>

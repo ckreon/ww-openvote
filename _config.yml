@@ -1,0 +1,54 @@
+# Site Settings
+title: 'OpenVote'
+description: 'A fully transparent voting system.'
+
+# Site Variables
+url: ''
+baseurl: '' # the subpath of your site, e.g. /blog
+company: 'OpenVote'
+email: 'ckreon@gmail.com'
+github_user: ''
+github_url: 'https://github.com/ckreon/ww-openvote'
+
+# The 'home' link in the navbar is configured here -
+# Set these values to change your Homepage:
+home_url: '/'
+home_icon_title: 'Home'
+
+# FrontMatter Settings
+permalink: '/:title/' # clean URL's (xyz.com/title vs xyz.com/title.html)
+
+# Build Settings
+include:
+  - _pages
+
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+  # NODE STUFF:
+  #- gulpfile.js
+  #- node_modules
+  #- package.json
+
+plugins:
+  - jekyll-assets
+  - octopress-minify-html
+  - jekyll-sitemap
+
+# Jekyll-Assets
+assets:
+  sources:
+    - _assets/icons
+
+# Markdown Settings
+markdown: 'redcarpet'
+redcarpet:
+  extensions:
+    - no_intra_emphasis
+    - tables
+    - autolink
+    - strikethrough
+    - with_toc_data

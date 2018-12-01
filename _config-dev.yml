@@ -1,0 +1,19 @@
+# This is a companion config file for use in the dev environment.
+#
+# It doesn't compress the HTML/CSS so compiled source code is easier
+# to navigate.
+#
+# To use, run Jekyll like this:
+#
+# jekyll serve -w --config _config.yml,_config-dev.yml
+#
+# (protip: make it an alias so you don't have to type it)
+
+
+# Build Settings
+plugins:
+  - jekyll-assets
+  - jekyll-sitemap
+
+# Bind to IP (make site available via LAN or WAN)
+host: 0.0.0.0
